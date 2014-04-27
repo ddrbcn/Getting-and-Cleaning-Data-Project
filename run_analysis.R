@@ -10,7 +10,7 @@ trainingData<-read.table("./UCI HAR Dataset/train/X_train.txt", col.names=featur
 testData<-read.table("./UCI HAR Dataset/test/X_test.txt", col.names=features);
 data<-rbind(trainingData, testData);
 
-#Extracting Extracts only the measurements on the mean and standard deviation
+#Extracting  only the measurements on the mean and standard deviation
 toMatch <- c(".*mean\\(\\).*$", ".*std\\(\\).*$")
 matches <- unique (grep(paste(toMatch,collapse="|"), features, value=FALSE))
 data <- data[,matches]
