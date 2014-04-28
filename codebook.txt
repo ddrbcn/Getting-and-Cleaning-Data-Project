@@ -48,7 +48,11 @@ The following files are available for the train and test data. Their description
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 
-For the project I merged training and test sets. I also merged training and test labels. I created a new dataset extracting only the features related with mean() and std() functions from the merged test and training datasets. I extracted the variables names and renamed the labels using strings. Finally I merged the activity labels, the subjects labels and the features data in one unic dataset.
+For the project I merged training and test sets. 
+I also merged training and test labels. 
+I created a new dataset extracting only the features related with mean() and std() functions from the merged test and training datasets. 
+I extracted the variables names and renamed the labels using strings. 
+Finally I merged the activity labels, the subjects labels and the features data in one unic tidy dataset.
 
 
 Notes: 
